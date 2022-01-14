@@ -114,9 +114,9 @@ canvas {
   padding: 20px;
 }
 @media (max-width: 940px) {
-  #github img {
-    width: 90px;
-    height: 90px;
+  #contract{
+    width:100%;
+    background-color: #fff;
+    padding: 10px;
   }
 }
-
