@@ -113,10 +113,11 @@ canvas {
   background-color: #fff;
   padding: 20px;
 }
-.signatureField{
+
+#signatureField{
   max-width: 100%;
 }
-.signatureField img{
+#signatureField img{
   max-width: 100%;
 }
 @media (max-width: 940px) {
@@ -124,5 +125,8 @@ canvas {
     width:100%;
     background-color: #fff;
     padding: 10px;
+  }
+  .signature-pad{
+    width: 100%;
   }
 }
