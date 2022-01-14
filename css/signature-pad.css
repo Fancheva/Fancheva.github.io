@@ -113,6 +113,12 @@ canvas {
   background-color: #fff;
   padding: 20px;
 }
+.signatureField{
+  max-width: 100%;
+}
+.signatureField img{
+  max-width: 100%;
+}
 @media (max-width: 940px) {
   #contract{
     width:100%;
