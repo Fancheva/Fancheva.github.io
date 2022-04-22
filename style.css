@@ -95,13 +95,17 @@ table.minimalistBlack {
 .addNew{
 display: flex;
 }
-.dropdown_list div:last-child{
+.changing_list div:last-child{
     padding: 10px;
 }
 .dropdown_list  div{
     display: flex;
 }
 .dropdown_list  div p{
+    width: 100%;
+    padding: 5px;
+}
+.changing_list  div p{
     width: 90%;
 }
 .colorList div{
