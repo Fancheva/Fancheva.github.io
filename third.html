@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <table class="minimalistBlack">
+        <thead>
+        <tr>
+            <th id="save">Зберегти</th>
+            <th id="cancel">Відмінити</th>
+        </tr>
+        </thead>
+        <thead>
+        <tr>
+            <th>Softphone</th>
+            <th>WFM глобальний</th>
+            <th>WFM детальний</th>
+            <th>Дата/час останньої дії</th>
+            <th>Користувач</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>Не в системе</td>
+            <td>
+                <div class="dropdown">
+                    <div class="dropdown_open">
+                        <a class="openDrop">Не у системі </a>
+                        <img src="down-svgrepo-com.svg" onclick="changeGlobal(this)" alt="open">
+                    </div>
+                    <div class="dropdown_list">
+                        <div>
+                            <p>Не у системі</p>
+                        </div>
+                        <div><p onclick="changeText(this)">Робочий статус</p></div>
+                        <div><p onclick="changeText(this)">Обід</p></div>
+                        <div><p onclick="changeText(this)">Перерва</p></div>
+                        <div><p onclick="changeText(this)">Навчання</p></div>
+                        <div><p onclick="changeText(this)">Не робочий статус</p></div>
+
+                    </div>
+                </div>
+            </td>
+            <td class="moreWFM">
+
+                <div class="dropdown">
+                    <div class="dropdown_open">
+                        <a class="openDrop">Пусто</a>
+                        <img src="down-svgrepo-com.svg" onclick="changeGlobal(this)" alt="open">
+                    </div>
+                    <div class="dropdown_list">
+                        <div class="addNew">
+                            <input type="text">
+                            <img src="add-svgrepo-com.svg" onclick="changeGlobal(this)" alt="add">
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="more_color">
+                    <div class="color"></div>
+                    <select name="select" class="color_selected" onChange="changeColor();">
+                        <option selected>Green</option>
+                        <option>White</option>
+                        <option>Yellow</option>
+                        <option>Pink</option>
+                        <option>Blue</option>
+                        <option>Red</option>
+                    </select>
+                </div>
+            </td>
+            <td class="timeCheck"></td>
+            <td class="userName"></td>
+        </tr>
+        <tr>
+            <td>В системе</td>
+            <td>
+                <div class="dropdown">
+                    <div class="dropdown_open">
+                        <a class="openDrop">Не у системі </a>
+                        <img src="down-svgrepo-com.svg" onclick="changeGlobal(this)" alt="open">
+                    </div>
+                    <div class="dropdown_list">
+                        <div>
+                            <p>Не у системі</p>
+                        </div>
+                        <div><p onclick="changeText(this)">Робочий статус</p></div>
+                        <div><p onclick="changeText(this)">Обід</p></div>
+                        <div><p onclick="changeText(this)">Перерва</p></div>
+                        <div><p onclick="changeText(this)">Навчання</p></div>
+                        <div><p onclick="changeText(this)">Не робочий статус</p></div>
+
+                    </div>
+                </div>
+            </td>
+            <td class="moreWFM">
+
+                <div class="dropdown">
+                    <div class="dropdown_open">
+                        <a class="openDrop">Пусто</a>
+                        <img src="down-svgrepo-com.svg" onclick="changeGlobal(this)" alt="open">
+                    </div>
+                    <div class="dropdown_list">
+                        <div class="addNew">
+                            <input type="text">
+                            <img src="add-svgrepo-com.svg" onclick="changeGlobal(this)" alt="add">
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="more_color">
+                    <div class="color"></div>
+                    <select name="select" class="color_selected" onChange="changeColor();">
+                        <option selected>Green</option>
+                        <option>White</option>
+                        <option>Yellow</option>
+                        <option>Pink</option>
+                        <option>Blue</option>
+                        <option>Red</option>
+                    </select>
+                </div>
+            </td>
+            <td class="timeCheck"></td>
+            <td class="userName"></td>
+        </tr>
+        <tr>
+            <td>Готов</td>
+            <td>
+                <div class="dropdown">
+                    <div class="dropdown_open">
+                        <a class="openDrop">Не у системі </a>
+                        <img src="down-svgrepo-com.svg" onclick="changeGlobal(this)" alt="open">
+                    </div>
+                    <div class="dropdown_list">
+                        <div>
+                            <p>Не у системі</p>
+                        </div>
+                        <div><p onclick="changeText(this)">Робочий статус</p></div>
+                        <div><p onclick="changeText(this)">Обід</p></div>
+                        <div><p onclick="changeText(this)">Перерва</p></div>
+                        <div><p onclick="changeText(this)">Навчання</p></div>
+                        <div><p onclick="changeText(this)">Не робочий статус</p></div>
+
+                    </div>
+                </div>
+            </td>
+            <td class="moreWFM">
+
+                <div class="dropdown">
+                    <div class="dropdown_open">
+                        <a class="openDrop">Пусто</a>
+                        <img src="down-svgrepo-com.svg" onclick="changeGlobal(this)" alt="open">
+                    </div>
+                    <div class="dropdown_list">
+                        <div class="addNew">
+                            <input type="text">
+                            <img src="add-svgrepo-com.svg" onclick="changeGlobal(this)" alt="add">
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="more_color">
+                    <div class="color"></div>
+                    <select name="select" class="color_selected" onChange="changeColor();">
+                        <option selected>Green</option>
+                        <option>White</option>
+                        <option>Yellow</option>
+                        <option>Pink</option>
+                        <option>Blue</option>
+                        <option>Red</option>
+                    </select>
+                </div>
+            </td>
+            <td class="timeCheck"></td>
+            <td class="userName"></td>
+        </tr>
+        <tr>
+            <td>В разговоре</td>
+            <td>
+                <div class="dropdown">
+                    <div class="dropdown_open">
+                        <a class="openDrop">Не у системі </a>
+                        <img src="down-svgrepo-com.svg" onclick="changeGlobal(this)" alt="open">
+                    </div>
+                    <div class="dropdown_list">
+                        <div>
+                            <p>Не у системі</p>
+                        </div>
+                        <div><p onclick="changeText(this)">Робочий статус</p></div>
+                        <div><p onclick="changeText(this)">Обід</p></div>
+                        <div><p onclick="changeText(this)">Перерва</p></div>
+                        <div><p onclick="changeText(this)">Навчання</p></div>
+                        <div><p onclick="changeText(this)">Не робочий статус</p></div>
+
+                    </div>
+                </div>
+            </td>
+            <td class="moreWFM">
+
+                <div class="dropdown">
+                    <div class="dropdown_open">
+                        <a class="openDrop">Пусто</a>
+                        <img src="down-svgrepo-com.svg" onclick="changeGlobal(this)" alt="open">
+                    </div>
+                    <div class="dropdown_list">
+                        <div class="addNew">
+                            <input type="text">
+                            <img src="add-svgrepo-com.svg" onclick="changeGlobal(this)" alt="add">
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="more_color">
+                    <div class="color"></div>
+                    <select name="select" class="color_selected" onChange="changeColor();">
+                        <option selected>Green</option>
+                        <option>White</option>
+                        <option>Yellow</option>
+                        <option>Pink</option>
+                        <option>Blue</option>
+                        <option>Red</option>
+                    </select>
+                </div>
+            </td>
+            <td class="timeCheck"></td>
+            <td class="userName"></td>
+        </tr>
+        <tr>
+            <td>Постобработка</td>
+            <td>
+                <div class="dropdown">
+                    <div class="dropdown_open">
+                        <a class="openDrop">Не у системі </a>
+                        <img src="down-svgrepo-com.svg" onclick="changeGlobal(this)" alt="open">
+                    </div>
+                    <div class="dropdown_list">
+                        <div>
+                            <p>Не у системі</p>
+                        </div>
+                        <div><p onclick="changeText(this)">Робочий статус</p></div>
+                        <div><p onclick="changeText(this)">Обід</p></div>
+                        <div><p onclick="changeText(this)">Перерва</p></div>
+                        <div><p onclick="changeText(this)">Навчання</p></div>
+                        <div><p onclick="changeText(this)">Не робочий статус</p></div>
+
+                    </div>
+                </div>
+            </td>
+            <td class="moreWFM">
+
+                <div class="dropdown">
+                    <div class="dropdown_open">
+                        <a class="openDrop">Пусто</a>
+                        <img src="down-svgrepo-com.svg" onclick="changeGlobal(this)" alt="open">
+                    </div>
+                    <div class="dropdown_list">
+                        <div class="addNew">
+                            <input type="text">
+                            <img src="add-svgrepo-com.svg" onclick="changeGlobal(this)" alt="add">
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="more_color">
+                    <div class="color"></div>
+                    <select name="select" class="color_selected" onChange="changeColor();">
+                        <option selected>Green</option>
+                        <option>White</option>
+                        <option>Yellow</option>
+                        <option>Pink</option>
+                        <option>Blue</option>
+                        <option>Red</option>
+                    </select>
+                </div>
+            </td>
+            <td class="timeCheck"></td>
+            <td class="userName"></td>
+        </tr>
+        <tr>
+            <td>В чате</td>
+            <td>
+                <div class="dropdown">
+                    <div class="dropdown_open">
+                        <a class="openDrop">Не у системі </a>
+                        <img src="down-svgrepo-com.svg" onclick="changeGlobal(this)" alt="open">
+                    </div>
+                    <div class="dropdown_list">
+                        <div>
+                            <p>Не у системі</p>
+                        </div>
+                        <div><p onclick="changeText(this)">Робочий статус</p></div>
+                        <div><p onclick="changeText(this)">Обід</p></div>
+                        <div><p onclick="changeText(this)">Перерва</p></div>
+                        <div><p onclick="changeText(this)">Навчання</p></div>
+                        <div><p onclick="changeText(this)">Не робочий статус</p></div>
+
+                    </div>
+                </div>
+            </td>
+            <td class="moreWFM">
+
+                <div class="dropdown">
+                    <div class="dropdown_open">
+                        <a class="openDrop">Пусто</a>
+                        <img src="down-svgrepo-com.svg" onclick="changeGlobal(this)" alt="open">
+                    </div>
+                    <div class="dropdown_list">
+                        <div class="addNew">
+                            <input type="text">
+                            <img src="add-svgrepo-com.svg" onclick="changeGlobal(this)" alt="add">
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="more_color">
+                    <div class="color"></div>
+                    <select name="select" class="color_selected" onChange="changeColor();">
+                        <option selected>Green</option>
+                        <option>White</option>
+                        <option>Yellow</option>
+                        <option>Pink</option>
+                        <option>Blue</option>
+                        <option>Red</option>
+                    </select>
+                </div>
+            </td>
+            <td class="timeCheck"></td>
+            <td class="userName"></td>
+        </tr>
+        <tr>
+            <td>Плановый обед</td>
+            <td>
+                <div class="dropdown">
+                    <div class="dropdown_open">
+                        <a class="openDrop">Не у системі </a>
+                        <img src="down-svgrepo-com.svg" onclick="changeGlobal(this)" alt="open">
+                    </div>
+                    <div class="dropdown_list">
+                        <div>
+                            <p>Не у системі</p>
+                        </div>
+                        <div><p onclick="changeText(this)">Робочий статус</p></div>
+                        <div><p onclick="changeText(this)">Обід</p></div>
+                        <div><p onclick="changeText(this)">Перерва</p></div>
+                        <div><p onclick="changeText(this)">Навчання</p></div>
+                        <div><p onclick="changeText(this)">Не робочий статус</p></div>
+
+                    </div>
+                </div>
+            </td>
+            <td class="moreWFM">
+
+                <div class="dropdown">
+                    <div class="dropdown_open">
+                        <a class="openDrop">Пусто</a>
+                        <img src="down-svgrepo-com.svg" onclick="changeGlobal(this)" alt="open">
+                    </div>
+                    <div class="dropdown_list">
+                        <div class="addNew">
+                            <input type="text">
+                            <img src="add-svgrepo-com.svg" onclick="changeGlobal(this)" alt="add">
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="more_color">
+                    <div class="color"></div>
+                    <select name="select" class="color_selected" onChange="changeColor();">
+                        <option selected>Green</option>
+                        <option>White</option>
+                        <option>Yellow</option>
+                        <option>Pink</option>
+                        <option>Blue</option>
+                        <option>Red</option>
+                    </select>
+                </div>
+            </td>
+            <td class="timeCheck"></td>
+            <td class="userName"></td>
+        </tr>
+        <tr>
+            <td>Техн. перерыв </td>
+            <td>
+                <div class="dropdown">
+                    <div class="dropdown_open">
+                        <a class="openDrop">Не у системі </a>
+                        <img src="down-svgrepo-com.svg" onclick="changeGlobal(this)" alt="open">
+                    </div>
+                    <div class="dropdown_list">
+                        <div>
+                            <p>Не у системі</p>
+                        </div>
+                        <div><p onclick="changeText(this)">Робочий статус</p></div>
+                        <div><p onclick="changeText(this)">Обід</p></div>
+                        <div><p onclick="changeText(this)">Перерва</p></div>
+                        <div><p onclick="changeText(this)">Навчання</p></div>
+                        <div><p onclick="changeText(this)">Не робочий статус</p></div>
+
+                    </div>
+                </div>
+            </td>
+            <td class="moreWFM">
+
+                <div class="dropdown">
+                    <div class="dropdown_open">
+                        <a class="openDrop">Пусто</a>
+                        <img src="down-svgrepo-com.svg" onclick="changeGlobal(this)" alt="open">
+                    </div>
+                    <div class="dropdown_list">
+                        <div class="addNew">
+                            <input type="text">
+                            <img src="add-svgrepo-com.svg" onclick="changeGlobal(this)" alt="add">
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="more_color">
+                    <div class="color"></div>
+                    <select name="select" class="color_selected" onChange="changeColor();">
+                        <option selected>Green</option>
+                        <option>White</option>
+                        <option>Yellow</option>
+                        <option>Pink</option>
+                        <option>Blue</option>
+                        <option>Red</option>
+                    </select>
+                </div>
+            </td>
+            <td class="timeCheck"></td>
+            <td class="userName"></td>
+        </tr>
+        <tr>
+            <td>В личных целях </td>
+            <td>
+                <div class="dropdown">
+                    <div class="dropdown_open">
+                        <a class="openDrop">Не у системі </a>
+                        <img src="down-svgrepo-com.svg" onclick="changeGlobal(this)" alt="open">
+                    </div>
+                    <div class="dropdown_list">
+                        <div>
+                            <p>Не у системі</p>
+                        </div>
+                        <div><p onclick="changeText(this)">Робочий статус</p></div>
+                        <div><p onclick="changeText(this)">Обід</p></div>
+                        <div><p onclick="changeText(this)">Перерва</p></div>
+                        <div><p onclick="changeText(this)">Навчання</p></div>
+                        <div><p onclick="changeText(this)">Не робочий статус</p></div>
+
+                    </div>
+                </div>
+            </td>
+            <td class="moreWFM">
+
+                <div class="dropdown">
+                    <div class="dropdown_open">
+                        <a class="openDrop">Пусто</a>
+                        <img src="down-svgrepo-com.svg" onclick="changeGlobal(this)" alt="open">
+                    </div>
+                    <div class="dropdown_list">
+                        <div class="addNew">
+                            <input type="text">
+                            <img src="add-svgrepo-com.svg" onclick="changeGlobal(this)" alt="add">
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="more_color">
+                    <div class="color"></div>
+                    <select name="select" class="color_selected" onChange="changeColor();">
+                        <option selected>Green</option>
+                        <option>White</option>
+                        <option>Yellow</option>
+                        <option>Pink</option>
+                        <option>Blue</option>
+                        <option>Red</option>
+                    </select>
+                </div>
+            </td>
+            <td class="timeCheck"></td>
+            <td class="userName"></td>
+        </tr>
+        <tr>
+            <td>Тренинг в рабочее время</td>
+            <td>
+                <div class="dropdown">
+                    <div class="dropdown_open">
+                        <a class="openDrop">Не у системі </a>
+                        <img src="down-svgrepo-com.svg" onclick="changeGlobal(this)" alt="open">
+                    </div>
+                    <div class="dropdown_list">
+                        <div>
+                            <p>Не у системі</p>
+                        </div>
+                        <div><p onclick="changeText(this)">Робочий статус</p></div>
+                        <div><p onclick="changeText(this)">Обід</p></div>
+                        <div><p onclick="changeText(this)">Перерва</p></div>
+                        <div><p onclick="changeText(this)">Навчання</p></div>
+                        <div><p onclick="changeText(this)">Не робочий статус</p></div>
+
+                    </div>
+                </div>
+            </td>
+            <td class="moreWFM">
+
+                <div class="dropdown">
+                    <div class="dropdown_open">
+                        <a class="openDrop">Пусто</a>
+                        <img src="down-svgrepo-com.svg" onclick="changeGlobal(this)" alt="open">
+                    </div>
+                    <div class="dropdown_list">
+                        <div class="addNew">
+                            <input type="text">
+                            <img src="add-svgrepo-com.svg" onclick="changeGlobal(this)" alt="add">
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="more_color">
+                    <div class="color"></div>
+                    <select name="select" class="color_selected" onChange="changeColor();">
+                        <option selected>Green</option>
+                        <option>White</option>
+                        <option>Yellow</option>
+                        <option>Pink</option>
+                        <option>Blue</option>
+                        <option>Red</option>
+                    </select>
+                </div>
+            </td>
+            <td class="timeCheck"></td>
+            <td class="userName"></td>
+        </tr>
+        </tbody>
+        </table>
+        
+        <script src="main.js"></script>
+</body>
+</html>

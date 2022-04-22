@@ -1,0 +1,126 @@
+table.minimalistBlack {
+    border: 3px solid #000000;
+    width: 100%;
+    text-align: left;
+    border-collapse: collapse;
+  }
+  table.minimalistBlack td, table.minimalistBlack th {
+    border: 1px solid #000000;
+    padding: 5px 4px;
+  }
+  table.minimalistBlack tbody td {
+    font-size: 13px;
+  }
+  table.minimalistBlack thead {
+    background: #CFCFCF;
+    background: -moz-linear-gradient(top, #dbdbdb 0%, #d3d3d3 66%, #CFCFCF 100%);
+    background: -webkit-linear-gradient(top, #dbdbdb 0%, #d3d3d3 66%, #CFCFCF 100%);
+    background: linear-gradient(to bottom, #dbdbdb 0%, #d3d3d3 66%, #CFCFCF 100%);
+    border-bottom: 3px solid #000000;
+  }
+  table.minimalistBlack thead th {
+    font-size: 15px;
+    font-weight: bold;
+    color: #000000;
+    text-align: left;
+  }
+  .moreWFM{
+      display: flex;
+      justify-content: space-around;
+  }
+  img{
+      cursor: pointer;
+  }
+  .moreSvg img{
+      width: 20px;
+      cursor: pointer;
+  }
+  .more_color{
+      display: flex;
+  }
+  .more_select{
+      width: 100px;
+  }
+  .color{
+    width: 20px;
+    height: 20px;
+    border-radius: 50px;
+    margin-right: 20px;
+    border:solid 1px #000; 
+  }
+  .dropdown_open{
+      display: flex;
+  }
+.dropdown_open img{
+    width: 15px;
+    cursor: pointer;
+}
+.openDrop{
+    display: flex;
+    justify-content: center;
+}
+.dropdown_list{
+    display: none;
+    position: absolute;
+    background-color: #d5d1d1;
+    min-width: 150px;
+    border-radius: 10px;
+    overflow: auto;
+    border: 1px solid #ddd;
+    z-index: 1;
+}
+.dropdown_list p {
+    cursor: pointer;
+    border-style: solid;
+    border-width: 0 0 1px 0;
+    height: 100%;
+    margin: 0;
+    padding: 13px 0;
+}
+.dropdown_list p:hover{
+    background-color: #ffffff;
+}
+.dropdown_list p:last-child{
+    border:none;
+}
+.show{
+    display: block!important;
+}
+.transform{
+    transform: rotateX(180deg);
+}
+.dropdown_list img{
+    width:20px;
+}
+.addNew{
+display: flex;
+}
+.dropdown_list div:last-child{
+    padding: 10px;
+}
+.dropdown_list  div{
+    display: flex;
+}
+.dropdown_list  div p{
+    width: 90%;
+}
+.colorList div{
+    width: 20px;
+    height: 20px;
+    border-radius: 50px;
+}
+#save{
+    background-color: rgb(2, 111, 2);
+    color: #fff;
+    text-align: center;
+    cursor: pointer;
+}
+#cancel{
+    background-color: rgb(192, 8, 8);
+    color: #fff;
+    text-align: center;
+    cursor: pointer;
+}
+.moreList{
+    padding: 0 10px;
+}
